@@ -60,9 +60,30 @@ body.dark-mode #theme-toggle-btn {
   background-color: #2b2622;
 }
 
+body.dark-mode .project-card {
+  background-color: #1e1b18;
+}
+
+body.dark-mode .project-card h3 {
+  color: #e08a4c;
+}
+
+body.dark-mode .project-card p {
+  color: #f0e9e0;
+}
+
+body.dark-mode .project-links a {
+  background-color: #e08a4c;
+  color: #1e1b18;
+}
+
+body.dark-mode .project-links a:hover {
+  background-color: #d6a25c;
+}
+
 .card {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
@@ -112,6 +133,55 @@ section {
   font-size: 0.9rem;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.project-card {
+  background-color: #f5f0e8;
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h3 {
+  color: #b5541e;
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.project-card p {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-links a {
+  background-color: #b5541e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: #9c4517;
+  text-decoration: none;
+}
+
 .contact-line {
   display: flex;
   align-items: center;
@@ -148,6 +218,12 @@ section {
   font-size: 0.8rem;
   margin-top: 30px;
   margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
