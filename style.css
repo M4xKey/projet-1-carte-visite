@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px 20px;
+  padding: 0;
+  background-color: #f5f0e8;
+  color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode {
+  background-color: #1e1b18;
+  color: #f0e9e0;
+}
+
+body.dark-mode .card {
+  background-color: #2b2622;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+  color: #e08a4c;
+}
+
+body.dark-mode .tagline,
+body.dark-mode .skills-list li,
+body.dark-mode .card-footer {
+  color: #d6a25c;
+}
+
+body.dark-mode h2 {
+  border-bottom-color: #1e1b18;
+}
+
+body.dark-mode .skills-list li {
+  background-color: #1e1b18;
+}
+
+body.dark-mode .contact a {
+  color: #e08a4c;
+}
+
+body.dark-mode #theme-toggle-btn {
+  background-color: #2b2622;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  padding: 30px 35px;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: #b5541e;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: #9c6b30;
+  font-style: italic;
+  margin-top: 0;
+}
+
+h2 {
+  color: #b5541e;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #f5f0e8;
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-list li {
+  background-color: #f5f0e8;
+  color: #9c6b30;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact a {
+  color: #b5541e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+#copy-email-btn {
+  background-color: #b5541e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+#copy-email-btn:hover {
+  background-color: #9c4517;
+}
+
+.card-footer {
+  text-align: center;
+  color: #9c6b30;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+}

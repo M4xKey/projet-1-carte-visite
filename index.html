@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte de visite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="theme-toggle-btn" type="button" aria-label="Basculer le mode sombre">🌙</button>
+
+  <main class="card">
+    <header class="card-header">
+      <h1>Prénom NOM</h1>
+      <p class="tagline">Ton titre / poste</p>
+    </header>
+
+    <section class="about">
+      <h2>À propos</h2>
+      <p>
+        Écris ici une courte présentation de toi en deux ou trois phrases :
+        ton parcours, ce que tu fais aujourd'hui, ce que tu recherches.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li>Compétence 1</li>
+        <li>Compétence 2</li>
+        <li>Compétence 3</li>
+        <li>Compétence 4</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p class="contact-line">
+        <a href="mailto:ton.email@example.com" id="email-link">ton.email@example.com</a>
+        <button id="copy-email-btn" type="button">Copier</button>
+      </p>
+      <p class="contact-line">
+        <a href="tel:+33600000000">06 00 00 00 00</a>
+      </p>
+    </section>
+
+    <footer class="card-footer">
+      <p>&copy; 2026 Ton Nom</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
