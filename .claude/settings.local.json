@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(start *)"
+      "Bash(start *)",
+      "Bash(curl *)",
+      "Bash(python -m http.server 8765)",
+      "Bash(npx --yes serve -l 8765 .)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
